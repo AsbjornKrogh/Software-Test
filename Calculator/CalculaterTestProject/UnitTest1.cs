@@ -43,9 +43,16 @@ namespace CalculaterTestProject
             Assert.That(uut.Power(3,3),Is.EqualTo(27));
         }
 
+        [Test]
+        public void Devide_4DevidedBy2_isEqual2()
+        {
+            Assert.That(uut.Devider(4,2),Is.EqualTo(2));
+        }
+
         [TestCase(6, 4, 10)]
         [TestCase(2, 1, 3)]
         [TestCase(6, -4, 2)]
+        
 
         public void Add(int x, int y, int z)
         {
