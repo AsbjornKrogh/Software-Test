@@ -32,6 +32,12 @@ namespace CalculaterTestProject
         }
 
         [Test]
+        public void Multiplu_10times10_EquelTo100()
+        {
+            Assert.That(uut.Multiply(10, 10), Is.EqualTo(100));
+        }
+
+        [Test]
         public void Power_3lifted3_isEqual27()
         {
             Assert.That(uut.Power(3,3),Is.EqualTo(27));
